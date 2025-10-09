@@ -1,0 +1,67 @@
+.wrapper {
+    width: 100%;
+    height: 66px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: transparent;
+    transition: background 0.2s ease;
+}
+
+
+
+
+.scrolled {
+    background: black;
+}
+
+.insideWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navContainer {
+    width: 637px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    width: 451px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navButton {
+    width: 147px;
+    height: 46px;
+    background: transparent;
+    border: none;
+}
+
+.navButton a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.contactButton {
+    width: 147px;
+    height: 46px;
+    font-size: 15px;
+    font-weight: bold;
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 23px;
+    border: none;
+    transition: 0.3s;
+}

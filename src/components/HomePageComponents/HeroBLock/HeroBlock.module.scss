@@ -1,0 +1,129 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background: 
+        radial-gradient(circle, rgba(0, 0, 0, 0.069) 0%, rgba(0, 0, 0, 0.187) 100%),
+        linear-gradient(
+            100deg, 
+            #ffffff calc(50% - 200px),      // белая часть слева
+            rgb(0, 0, 0) calc(50% - 200px)  // черная часть справа, шире на 100px
+        );
+}
+.insideWrapper{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}                   
+
+.welcomeBlock{
+    width: 547px;
+    height: 370px;
+    // background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .HiBlock{
+        
+
+
+        .HiBlockP{
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+        }
+    }
+
+    .NameBlock{
+        height: 200px;
+
+        .Name{
+            font-size: 80px;
+            font-weight: bold;
+            color: black;
+            margin: 0;
+        }
+
+        .NameSubtitle{
+            font-size: 25px;
+            font-weight: bolder;
+            color: #909090;
+        }
+    }
+    
+    .LinksBlocks{
+        width: 213px;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .gmailIco{
+            width: 61px;
+            height: 56px;
+            background: #C4C4C4;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 5px -1px gray;
+
+            .gmail{
+                width: 37px;
+                height: 36px;
+                background: url("../../../../public/hero/gmail.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: auto;
+            }
+        }
+        .githubIco{
+            width: 61px;
+            height: 56px;
+            background: #C4C4C4;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 5px -1px gray;
+
+            .github{
+                width: 35px;
+                height: 35px;
+                background: url("../../../../public/hero/gitHub.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: auto;
+            }
+        }
+        .linkedInIco{
+            width: 61px;
+            height: 56px;
+            background: #C4C4C4;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 5px -1px gray;
+
+            .linkedIn{
+                width: 39px;
+                height: 39px;
+                background: url("../../../../public/hero/linkedIn.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: auto;                
+            }
+        }
+    }
+}
+
+.blackBlock{
+    
+}
+
+// .blackBlock{
+//     width: 50%; 
+//     height: 80%;
+//     background: url("https://png.pngtree.com/png-vector/20250111/ourlarge/pngtree-king-chess-png-image_15140602.png"); 
+// }

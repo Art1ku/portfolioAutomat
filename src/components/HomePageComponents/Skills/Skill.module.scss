@@ -1,0 +1,256 @@
+.wrapper{
+    width: 100%;
+    height: auto;
+    margin-bottom: 140px;
+}
+
+.insideWrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
+
+
+
+
+.titleBlock{
+    width: 404px;
+    height: 107px;
+    border: 10px solid black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .title{
+        color: black;
+        font-size: 30px;
+        font-weight: bolder;
+        letter-spacing: 12px;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin: auto;
+    }
+}
+
+
+
+.skillsBlock{
+    height: 1413px;
+    width: 1004px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+.learningBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.otherSkillsBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
+.functionsBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
+
+
+.blocksTitle{
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: black;
+}
+.blocksText{
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 200;
+}
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-content: center; 
+    align-items: center;
+    row-gap: 80px;
+
+
+
+
+
+    .block {
+        width: 100%;
+        height: 180px;
+        background: transparent;
+        // border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+
+        .logoHTML{
+            width: 85px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/html.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }  
+        .logoCSS{
+            width: 85px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/css.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;            
+
+        }
+        .logoSASS{
+            width: 127px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/sass.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;  
+
+        }
+        .logoJS{
+            width: 97px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/js.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;  
+
+        }
+        .logoREACT{
+            width: 106px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/react.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;  
+        }
+        .logoTS{
+            width: 100px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/typescript.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;  
+        }
+        .logoGIT{
+            width: 97px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/git.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .logoFIGMA{
+            width: 70px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/figma.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+        .logoNODE{
+            width: 86px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/nodejs.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;  
+        }
+        .logoREDUX{
+            width: 100px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/redux.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;  
+        }
+        .logoBT{
+            width: 97px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/bootstrap.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;  
+        }
+        .logoJAVA{
+            width: 120px;
+            height: 120px;
+            background: url("../../../../public/skillsBlock/java.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+
+
+        .logoENG{
+            width: 100px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/english2.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;  
+        }
+        .logoGERMAN{
+            width: 100px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/germany.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;  
+        }
+        .logoTAILWIND{
+            width: 127px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/tailwind.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;  
+        }
+        .logoVITE{
+            width: 100px;
+            height: 100px;
+            background: url("../../../../public/skillsBlock/vite.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;  
+        }
+
+    }
+}
+
+
+

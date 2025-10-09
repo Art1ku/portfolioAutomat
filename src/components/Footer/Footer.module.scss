@@ -1,0 +1,155 @@
+.wrapper{
+    width: 100%;
+    height: 326px;
+    background: #1A1A1A;
+}
+.insideWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.secInsideWrapper{
+    width: 370px;
+    height: 190px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background: #1A1A1A;
+
+    .backLink{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        .upArrow{
+            width: 15px;
+            height: 15px;
+            background: url("../../../public/footer/upArrow.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        a{
+            font-size: 15px;
+            font-size: bold;
+        }
+    }
+
+
+
+    .linksIcons{
+        width: 205px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+
+        .iconFacebook{
+            width: 30px;
+            height: 30px;
+            background: url("../../../public/footer/facebook.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .iconLinkedIn{
+            width: 30px;
+            height: 30px;
+            background: url("../../../public/footer/linkedin.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .iconInstagram{
+            width: 30px;
+            height: 30px;
+            background: url("../../../public/footer/instagramm.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .iconGmail{
+            width: 30px;
+            height: 30px;
+            background: url("../../../public/footer/gmail.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+
+
+
+    }
+}
+
+
+.rights{
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    display: flex;
+    gap: 10px;
+
+    .textWrap{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+        color: white;
+
+
+        .rightTextBold{
+            font-size: 18px;
+            color: #FFFFFF;
+            opacity: 0.5;
+            font-weight: bold;
+            display: flex;
+        }
+        .rightTextRegular{
+            font-size: 18px;
+            color: #FFFFFF;
+            opacity: 0.5;
+            font-weight: normal;
+            display: flex;
+        }
+    }
+}
+
+
+.backLink {
+    cursor: pointer;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    .upArrow {
+        width: 15px;
+        height: 15px;
+        background: url("../../../public/footer/upArrow.svg") center/cover no-repeat;
+    }
+}
