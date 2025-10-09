@@ -1,69 +1,132 @@
-.wrapper{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    margin-top: none;
-    margin-bottom: none;
+.wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 50px;
 }
 
-.insideWrapper{
-    width: 100%;
-    height: 100%;
+.insideWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  .UPblock {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    gap: 80px;
-    padding-top: 70px;
-    padding-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
 
-    .UPblock{
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    .BOTTOMblock{
-        display: flex;
-        justify-content: space-between;
-
-    }
-}
-
-
-.block1{
-    width: 441px;
-    height: 90px;
+  .BOTTOMblock {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.block2{
-    width: 441px;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.block3{
-    width: 441px;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: auto;
+    justify-content: center;
+  }
 }
 
+/* ===== Блоки ===== */
+.block1,
+.block2,
+.block3 {
+  width: 441px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
 
-.Title{
-    font-size: 22px;
+.Title {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: black;
+  text-align: left;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 300;
+  color: black;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* ===== Адаптив ===== */
+
+/* --- до 1100px --- */
+@media (max-width: 1100px) {
+  .insideWrapper {
+    gap: 60px;
+  }
+
+  .block1,
+  .block2,
+  .block3 {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+
+  }
+
+  .UPblock {
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .Title {
+    font-size: 17px;
+    letter-spacing: 5px;
     font-weight: bold;
-    letter-spacing: 7px;
-    text-transform: uppercase;
-    color: black;
+  }
+
+  .text {
+    font-size: 14px;
+    text-align: start;
+  }
 }
 
-.text{
-    font-size: 14px;
-    font-weight: 100;
-    color: black;
+/* --- до 768px --- */
+@media (max-width: 768px) {
+  .insideWrapper {
+    gap: 50px;
+  }
+
+  .block1,
+  .block2,
+  .block3 {
+    width: 100%;
+  }
+
+  .Title {
+    font-size: 18px;
+    text-align: start;
+    letter-spacing: 4px;
+  }
+
+  .text {
+    font-size: 13px;
+    text-align: start;
+  }
+}
+
+/* --- до 480px --- */
+@media (max-width: 480px) {
+  .wrapper {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .Title {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 1.4;
+  }
 }

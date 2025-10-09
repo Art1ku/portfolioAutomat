@@ -139,3 +139,27 @@
         color: white;
     }
 }
+
+
+
+
+@media (max-width: 1024px) {
+  .gridItem {
+    width: calc(50% - 10px); 
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .gridItem {
+    width: 100%; 
+  }
+
+  .nav {
+    width: 100%;
+    .navItem {
+      width: auto;
+      flex: 1;
+    }
+  }
+}

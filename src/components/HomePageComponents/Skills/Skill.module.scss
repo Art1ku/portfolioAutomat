@@ -254,3 +254,184 @@
 
 
 
+
+
+
+
+
+
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 140px;
+}
+
+.insideWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* ===== title ===== */
+.titleBlock {
+  max-width: 404px;
+  width: 404px;
+  height: 107px;
+  border: 10px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  .title {
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 12px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+/* ===== skills ===== */
+.skillsBlock {
+  width: 100%;
+  max-width: 1004px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.functionsBlock,
+.learningBlock,
+.otherSkillsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.blocksTitle {
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+}
+
+.blocksText {
+  font-size: 24px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 200;
+  text-align: center;
+}
+
+.blocks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  row-gap: 80px;
+  column-gap: 20px;
+
+  .block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+    div {
+      width: auto;
+      height: 100px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+
+
+
+
+
+@media (max-width: 1100px) {
+  .blocks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+    .wrapper{
+    height: 2100px;
+  }
+
+  .blocksText {
+    font-size: 22px;
+  }
+
+  .blocksTitle {
+    font-size: 28px;
+  }
+
+
+  .titleBlock{
+    width: 161px;
+    height: 68px;
+    border: 7px solid black;
+    .title{
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 8px;
+    }
+  }
+}
+
+/* --- до 768px --- */
+@media (max-width: 768px) {
+  .blocks {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
+  }
+
+  .blocksText {
+    font-size: 20px;
+  }
+
+  .blocksTitle {
+    font-size: 26px;
+  }
+
+  .wrapper{
+    height: 2300px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .wrapper{
+    height: 4000px;
+  }
+
+
+  .blocks {
+    grid-template-columns: 1fr; 
+    row-gap: 50px;
+  }
+
+  .blocksText {
+    font-size: 18px;
+  }
+
+  .blocksTitle {
+    font-size: 22px;
+  }
+}
+
