@@ -40,8 +40,6 @@ export default function Header() {
                     <div className={classes.logo}>
                         <a href="#hero" onClick={closeMenu}>AI</a>
                     </div>
-
-                    {/* Кнопка бургер */}
                     <div className={classes.burger} onClick={toggleMenu}>
                         <div className={`${classes.line} ${menuOpen ? classes.open : ""}`} />
                         <div className={`${classes.line} ${menuOpen ? classes.open : ""}`} />

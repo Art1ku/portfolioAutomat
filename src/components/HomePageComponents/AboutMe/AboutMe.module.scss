@@ -14,7 +14,7 @@
   gap: 40px;
 }
 
-/* ===== title ===== */
+
 .titleBlock {
   max-width: 404px;
   width: 404px;
@@ -36,7 +36,7 @@
   }
 }
 
-/* ===== text ===== */
+
 .textBlock {
   max-width: 763px;
   width: 90%;
@@ -50,7 +50,6 @@
   }
 }
 
-/* ===== explore ===== */
 .exploreMoreBlock {
   width: 139px;
   height: 32px;
@@ -69,7 +68,7 @@
   }
 }
 
-/* ===== Responsive ===== */
+
 @media (max-width: 900px) {
   .titleBlock {
     border-width: 6px;
